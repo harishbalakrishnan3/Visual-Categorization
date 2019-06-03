@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Generalized Context Model (GCM) &mdash; Visual Categorization 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Datasets" href="../../datasets/index.html" />
+    <link rel="prev" title="Categorization Models" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Visual Categorization
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Categorization Models</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Generalized Context Model (GCM)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../datasets/index.html">Datasets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../datasets/GCM/index.html">GCM</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../datasets/GCM/nosofsky1986.html">nosofsky1986</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../datasets/GCM/nosofsky2017.html">nosofsky2017</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Visual Categorization</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Categorization Models</a> &raquo;</li>
+        
+      <li>Generalized Context Model (GCM)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/models/GCM/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="generalized-context-model-gcm">
+<h1>Generalized Context Model (GCM)<a class="headerlink" href="#generalized-context-model-gcm" title="Permalink to this headline">¶</a></h1>
+<p>Module : <a class="reference download internal" download="" href="../../_downloads/f8f485abc1bbed60263f730227117e23/gcm.py"><code class="xref download docutils literal notranslate"><span class="pre">gcm</span></code></a></p>
+<span class="target" id="module-GCM.gcm"></span><p>The above module contains the necessary functions that helps in implementing the GCM. The documentation
+for these functions is described below.</p>
+<dl class="function">
+<dt id="GCM.gcm.calculate_probabilities">
+<code class="descclassname">GCM.gcm.</code><code class="descname">calculate_probabilities</code><span class="sig-paren">(</span><em>J</em>, <em>stimulus_representation</em>, <em>w</em>, <em>c</em>, <em>r</em>, <em>categories_idx</em>, <em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#GCM.gcm.calculate_probabilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that calculates the probabilities of each of the stimuli belonging to category J. i.e., it calculates
+P(J|i) for all i with a fixed J.
+Note that the function requires all the parameters of the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>J</strong> (<em>int</em>) – Category Number</p></li>
+<li><p><strong>stimulus_representation</strong> (<em>np.array</em>) – The stimuli are given to this function in the form of a n x N matrix, where n is the number of stimuli and N is
+the number of dimensions of each stimuli in the psychological space</p></li>
+<li><p><strong>w</strong> (<em>list</em>) – This is the list of weights corresponding to each dimension of the stimulus in the psychological space</p></li>
+<li><p><strong>c</strong> (<em>int</em>) – This is the scale parameter used in the distance calculation</p></li>
+<li><p><strong>r</strong> (<em>int</em>) – This is the Minkowski’s distance metric. A value of 1 corresponds to city-block metric (generally used when the
+stimuli has separable dimensions) ; A value of 2 corresponds to Eucledian distance metric (generally used when
+the stimuli has integral dimensions)</p></li>
+<li><p><strong>categories_idx</strong> (<em>list</em>) – This is the list that indicates which stimulus belongs to which category. For example, out of 5 stimuli, if
+stimuli #0, #2, #4 belongs to category 0 and the rest belongs to category 1, then
+categories_Idx = [[0,2,4],[1,3]]</p></li>
+<li><p><strong>b</strong> (<em>list</em>) – This is the list of biases for the categories</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns the probabilities of all the stimuli being categorised into category J</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="GCM.gcm.gaussian_similarity">
+<code class="descclassname">GCM.gcm.</code><code class="descname">gaussian_similarity</code><span class="sig-paren">(</span><em>stimulus_representation</em>, <em>i</em>, <em>j</em>, <em>w</em>, <em>c</em>, <em>r</em><span class="sig-paren">)</span><a class="headerlink" href="#GCM.gcm.gaussian_similarity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that calculates and returns the gaussian similarity of stimuli i and j</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>stimulus_representation</strong> (<em>np.array</em>) – The stimuli are given to this function in the form of a n x N matrix, where n is the number of stimuli and N is
+the number of dimensions of each stimuli in the psychological space</p></li>
+<li><p><strong>i</strong> (<em>int</em>) – Stimulus i</p></li>
+<li><p><strong>j</strong> (<em>int</em>) – Stimulus j</p></li>
+<li><p><strong>w</strong> (<em>list</em>) – This is the list of weights corresponding to each dimension of the stimulus in the psychological space</p></li>
+<li><p><strong>c</strong> (<em>int</em>) – This is the scale parameter used in the distance calculation</p></li>
+<li><p><strong>r</strong> (<em>int</em>) – This is the Minkowski’s distance metric. A value of 1 corresponds to city-block metric (generally used when the
+stimuli has separable dimensions) ; A value of 2 corresponds to eucledian distance metric (generally used when
+the stimuli has integral dimensions)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns the Gaussian similarity between the two stimulus</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>np.float64</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="GCM.gcm.probability_of_category_J">
+<code class="descclassname">GCM.gcm.</code><code class="descname">probability_of_category_J</code><span class="sig-paren">(</span><em>J</em>, <em>stimulus_representation</em>, <em>w</em>, <em>c</em>, <em>r</em>, <em>i</em>, <em>categories_idx</em>, <em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#GCM.gcm.probability_of_category_J" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that calculates the probability of category J, given stimulus i</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>J</strong> (<em>int</em>) – Category Number</p></li>
+<li><p><strong>stimulus_representation</strong> (<em>np.array</em>) – The stimuli are given to this function in the form of a n x N matrix, where n is the number of stimuli and N is
+the number of dimensions of each stimuli in the psychological space</p></li>
+<li><p><strong>w</strong> (<em>list</em>) – This is the list of weights corresponding to each dimension of the stimulus in the psychological space</p></li>
+<li><p><strong>c</strong> (<em>int</em>) – This is the scale parameter used in the distance calculation</p></li>
+<li><p><strong>r</strong> (<em>int</em>) – This is the Minkowski’s distance metric. A value of 1 corresponds to city-block metric (generally used when the
+stimuli has separable dimensions) ; A value of 2 corresponds to Eucledian distance metric (generally used when
+the stimuli has integral dimensions)</p></li>
+<li><p><strong>i</strong> (<em>int</em>) – Stimulus i</p></li>
+<li><p><strong>categories_idx</strong> (<em>list</em>) – This is the list that indicates which stimulus belongs to which category. For example, out of 5 stimuli, if
+stimuli #0, #2, #4 belongs to category 0 and the rest belongs to category 1, then
+categories_Idx = [[0,2,4],[1,3]]</p></li>
+<li><p><strong>b</strong> (<em>list</em>) – This is the list of biases for the categories</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns the probability of stimulus i belonging to category J</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>np.float64</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>A Sample Script : <a class="reference download internal" download="" href="../../_downloads/fe781f44dc48c070fc8eacc070bf7389/sample.py"><code class="xref download docutils literal notranslate"><span class="pre">sample</span></code></a></p>
+<p>The above script illustrates how one can use the gcm module. As an example, the above script generates the plot in figure 7 of <a class="reference internal" href="#noso86" id="id1"><span>[Noso86]</span></a> for subject 1.</p>
+<img alt="../../_images/AugmentedGCM.png" src="../../_images/AugmentedGCM.png" />
+<p class="rubric">References</p>
+<dl class="citation">
+<dt class="label" id="noso86"><span class="brackets"><a class="fn-backref" href="#id1">Noso86</a></span></dt>
+<dd><p>Nosofsky, Robert M.: Attention, Similarity, and the Identification-Categorization relationship. In: The Journal of Experimental Psychology: General. 39-57.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../datasets/index.html" class="btn btn-neutral float-right" title="Datasets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="Categorization Models" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Harish Balakrishnan
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
