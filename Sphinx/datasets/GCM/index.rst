@@ -1,7 +1,7 @@
 GCM
 ===
 
-The following are the datasets associated with GCM
+The following are the datasets associated with GCM.
 
 .. toctree::
    :maxdepth: 2

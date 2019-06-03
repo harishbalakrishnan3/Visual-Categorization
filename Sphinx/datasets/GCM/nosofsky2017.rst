@@ -1,4 +1,7 @@
 nosofsky2017
 ============
 
-:download:`nosofsky2017 <../../../datasets/GCM/nosofsky2017.zip>`
+The following link will take you to the github repo location. Download the file from there.
+
+:download:`nosofsky2017 <https://github.com/harishbalakrishnan3/Visual-Categorization/blob/master/datasets/GCM/nosofsky2017.zip>`
+
