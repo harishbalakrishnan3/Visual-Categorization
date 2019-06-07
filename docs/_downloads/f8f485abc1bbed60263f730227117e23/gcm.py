@@ -1,10 +1,8 @@
-"""
-The above module contains the necessary functions that helps in implementing the GCM. The documentation
-for these functions is described below.
-"""
+# Module that contains the necessary functions to implement the GCM
+# Author: Harish Balakrishnan
 
-import numpy as np, pandas as pd
-from scipy.optimize import minimize
+
+import numpy as np
 
 
 def gaussian_similarity(stimulus_representation, i, j, w, c, r):
@@ -32,7 +30,7 @@ def gaussian_similarity(stimulus_representation, i, j, w, c, r):
     Returns
     -------
     np.float64
-        Returns the Gaussian similarity between the two stimulus
+        The Gaussian similarity between the two stimulus
     """
     def distance():
         """
@@ -59,7 +57,7 @@ def probability_of_category_J(J, stimulus_representation, w, c, r, i, categories
     Parameters
     ----------
     J : int
-        Category Number
+        Category number
     stimulus_representation : np.array
         The stimuli are given to this function in the form of a n x N matrix, where n is the number of stimuli and N is
         the number of dimensions of each stimuli in the psychological space
@@ -83,7 +81,7 @@ def probability_of_category_J(J, stimulus_representation, w, c, r, i, categories
     Returns
     -------
     np.float64
-        Returns the probability of stimulus i belonging to category J
+        The probability of stimulus i belonging to category J
     """
     total_categories = len(categories_idx)
 
@@ -135,7 +133,7 @@ def calculate_probabilities(J, stimulus_representation, w, c, r, categories_idx,
     Returns
     -------
     list
-        Returns the probabilities of all the stimuli being categorised into category J
+        The probabilities of all the stimuli being categorised into category J
     """
     probabilities = []
     total_stimuli = np.shape(stimulus_representation)[0]

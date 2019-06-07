@@ -1,6 +1,6 @@
 """
-A sample python script that illustrates GCM.
-As a first step, we need to find the model's parameters - c,w,b (we assume r = 2).
+A sample python script that illustrates how to use the gcm module.
+As a first step, we need to find the model's parameters - c,w,b (we will assume r = 2).
 This is done using MLE. After we find the parameters, we use them to find the corresponding probabilities using the
 functions from the gcm module.
 The following script illustrates the procedure for Subject1. GCM predicted probabilities of all four categorization
@@ -47,13 +47,19 @@ def calculateLL(probabilities):
     return -np.sum(np.log(probabilities))
 
 
-data = pd.read_csv('../datasets/GCM/nosofsky1986/subject1/stimuli.csv', sep=",")
-observed_df = pd.read_csv('../datasets/GCM/nosofsky1986/subject1/observed_probabilities.csv', sep=",")
+# Read the data set
+data = pd.read_csv('../../datasets/nosofsky1986/subject1/stimuli.csv', sep=",")
+observed_df = pd.read_csv('../../datasets/nosofsky1986/subject1/observed_probabilities.csv', sep=",")
+
+# Calculate constants from the datasets
 stimulus_representation = data.values
 numDimensions = np.shape(stimulus_representation)[1]
 
 
+#######################################################################################################################
 # Case1: Dimensional Stimuli
+#######################################################################################################################
+
 observed = list(observed_df.values[:, 0])
 observed_dimensional = observed
 categories_idx = [[0, 1, 2, 3, 4, 5, 6, 7], [8, 9, 10, 11, 12, 13, 14, 15]]
@@ -93,7 +99,10 @@ w, c, b = results.x[1:numDimensions+1], results.x[0], results.x[numDimensions+1:
 predicted_dimensional = calculate_probabilities(0, stimulus_representation, w, c, r, categories_idx, b)
 
 
+#######################################################################################################################
 # Case 2: Criss-Cross Stimuli
+#######################################################################################################################
+
 observed = list(observed_df.values[:, 1])
 observed_crisscross = observed
 categories_idx = [[2, 3, 6, 7, 8, 9, 12, 13], [0, 1, 4, 5, 10, 11, 14, 15]]
@@ -114,7 +123,10 @@ w, c, b = results.x[1:numDimensions+1], results.x[0], results.x[numDimensions+1:
 predicted_crisscross = calculate_probabilities(0, stimulus_representation, w, c, r, categories_idx, b)
 
 
+#######################################################################################################################
 # Case 3: Interior-Exterior
+#######################################################################################################################
+
 observed = list(observed_df.values[:, 2])
 observed_interiorexterior= observed
 categories_idx = [[5, 6, 9, 10], [0, 1, 2, 3, 4, 7, 8, 11, 12, 13, 14, 15]]
@@ -135,8 +147,10 @@ w, c, b = results.x[1:numDimensions+1], results.x[0], results.x[numDimensions+1:
 predicted_interiorexterior = calculate_probabilities(0, stimulus_representation, w, c, r, categories_idx, b)
 
 
-
+#######################################################################################################################
 # Case 4: Diagnol
+#######################################################################################################################
+
 observed = list(observed_df.values[:, 3])
 observed_diagnol = observed
 categories_idx = [[0, 1, 2, 4, 5, 8, 12], [3, 6, 7, 9, 10, 11, 13, 14, 15]]
@@ -157,14 +171,21 @@ w, c, b = results.x[1:numDimensions+1], results.x[0], results.x[numDimensions+1:
 predicted_diagnol = calculate_probabilities(0, stimulus_representation, w, c, r, categories_idx, b)
 
 
+#######################################################################################################################
+# Plotting Graphs
+#######################################################################################################################
+
+yx = [0, 1]
+
 plt.style.use('ggplot')
 plt.scatter(predicted_dimensional, observed_dimensional, c="r", alpha=0.75, label="Dimensional")
 plt.scatter(predicted_crisscross, observed_crisscross, c="b", alpha=0.75, label="Criss-Cross")
 plt.scatter(predicted_interiorexterior, observed_interiorexterior, c="g", alpha=0.75, label="Interior-Exterior")
 plt.scatter(predicted_diagnol, observed_diagnol, c="c", alpha=0.75, label="Diagnol")
+plt.plot(yx, yx, 'k-', alpha=0.75, zorder=0)
 plt.legend(loc='upper left', frameon=True)
 plt.xlabel('Augmented GCM Predicted Probabilities')
 plt.ylabel('Observed Categorization Probabilities')
 plt.title('Subject1')
-plt.savefig('../datasets/GCM/nosofsky1986/subject1/AugmentedGCM.png')
+plt.savefig('../../datasets/nosofsky1986/subject1/AugmentedGCM.png')
 plt.show()

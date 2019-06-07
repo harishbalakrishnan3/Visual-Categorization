@@ -8,3 +8,4 @@ Click on the respective links to view the documentation.
    :maxdepth: 1
 
    GCM/index
+   Prototype/index
