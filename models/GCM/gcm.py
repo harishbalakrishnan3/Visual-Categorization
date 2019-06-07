@@ -111,7 +111,7 @@ def calculate_probabilities(J, stimulus_representation, w, c, r, categories_idx,
     Parameters
     ----------
     J : int
-        Category Number
+        Category number
     stimulus_representation : np.array
         The stimuli are given to this function in the form of a n x N matrix, where n is the number of stimuli and N is
         the number of dimensions of each stimuli in the psychological space
