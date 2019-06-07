@@ -1,1 +1,2 @@
 datasets/GCM/nosofsky2017.zip filter=lfs diff=lfs merge=lfs -text
+datasets/nosofsky2017.zip filter=lfs diff=lfs merge=lfs -text
