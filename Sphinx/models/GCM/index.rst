@@ -1,9 +1,11 @@
 Generalized Context Model (GCM)
 ===============================
 
+Reference : [Noso86]_
+
 Module : :download:`gcm <../../../models/GCM/gcm.py>`
 
-The above module contains the necessary functions that helps in implementing the GCM. The documentation
+The above module contains the necessary functions that aid in implementing the GCM. The documentation
 for these functions is described below.
 
 .. automodule:: GCM.gcm

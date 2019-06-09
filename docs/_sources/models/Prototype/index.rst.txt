@@ -1,9 +1,11 @@
 Prototype Model
 ===============
 
+Reference: [MiSm02]_
+
 Module : :download:`prototype <../../../models/Prototype/prototype.py>`
 
-The above module contains the necessary functions that helps in implementing the Prototype model. The documentation
+The above module contains the necessary functions that aid in implementing the Prototype model. The documentation
 for these functions is described below.
 
 .. automodule:: Prototype.prototype

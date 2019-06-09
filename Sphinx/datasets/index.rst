@@ -10,4 +10,5 @@ Data sets of size less than 100 MB will be downloaded directly as zip files. For
    nosofsky1986
    nosofsky2017
    medin1978
+   shepard1961
 

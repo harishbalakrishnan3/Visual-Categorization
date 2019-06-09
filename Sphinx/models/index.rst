@@ -9,3 +9,4 @@ Click on the respective links to view the documentation.
 
    GCM/index
    Prototype/index
+   Alcove/index

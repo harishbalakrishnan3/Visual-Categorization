@@ -1,5 +1,5 @@
 # Module that contains the necessary functions to implement the Prototype model
-# Author: Harish Balakrishna
+# Author: Harish Balakrishnan
 
 import numpy as np
 
