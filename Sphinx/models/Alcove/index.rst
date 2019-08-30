@@ -1,4 +1,4 @@
-ALCOVE model
+ALCOVE Model
 ============
 
 Reference : [Krus92]_

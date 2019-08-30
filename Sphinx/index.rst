@@ -18,7 +18,8 @@ Datasets
     in zip files. Datasets that are less than 100 MB can be downloaded directly from here. For larger datasets, the
     hyperlink will take you to the GitHub repo from where you can download them.
 
-Feel free to explore!
+This is an ongoing project. If you wish to contribute to it, contact me at: harishbalakrishnan3@gmail.com
+
 
 .. toctree::
    :maxdepth: 2
