@@ -19,7 +19,7 @@ def distance(w, x, i, P, r):
         Stimulus i
     P : list
         P is the prototype that is represented in the form of co-ordinates in the psychological space. For example,
-        if it is a four dimensional psychological space, a prototype for a category could be [1,1,1,1]
+        if it is a four dimensional psychological space, the prototype for a category could be [1,1,1,1]
     r : int
         This is the Minkowski's distance metric. A value of 1 corresponds to city-block metric (generally used when the
         stimuli has separable dimensions) ; A value of 2 corresponds to eucledian distance metric (generally used when

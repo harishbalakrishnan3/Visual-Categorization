@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ALCOVE model &mdash; Visual Categorization 1.0 documentation</title>
+  <title>ALCOVE Model &mdash; Visual Categorization 1.0 documentation</title>
   
 
   
@@ -91,7 +91,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Prototype/index.html#example">Example</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">ALCOVE model</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ALCOVE Model</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
 </ul>
 </li>
@@ -151,7 +151,7 @@
         
           <li><a href="../index.html">Categorization Models</a> &raquo;</li>
         
-      <li>ALCOVE model</li>
+      <li>ALCOVE Model</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -171,14 +171,14 @@
            <div itemprop="articleBody">
             
   <div class="section" id="alcove-model">
-<h1>ALCOVE model<a class="headerlink" href="#alcove-model" title="Permalink to this headline">¶</a></h1>
+<h1>ALCOVE Model<a class="headerlink" href="#alcove-model" title="Permalink to this headline">¶</a></h1>
 <p>Reference : <a class="reference internal" href="#krus92" id="id1"><span>[Krus92]</span></a></p>
 <p>Module : <a class="reference download internal" download="" href="../../_downloads/526bf4194f8ad463fe5e69ec3d5ee156/alcove.py"><code class="xref download docutils literal notranslate"><span class="pre">alcove</span></code></a></p>
 <p>The above module contains the necessary functions that aid in implementing the ALCOVE model. The documentation
 for these functions is described below.</p>
 <span class="target" id="module-Alcove.alcove"></span><dl class="function">
 <dt id="Alcove.alcove.find_del_alpha">
-<code class="descclassname">Alcove.alcove.</code><code class="descname">find_del_alpha</code><span class="sig-paren">(</span><em>current_stimulus_id</em>, <em>current_stimulus</em>, <em>lambda_alpha</em>, <em>c</em>, <em>hidden_representation</em>, <em>output_activations</em>, <em>hidden_activations</em>, <em>w</em>, <em>categories</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.find_del_alpha" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">Alcove.alcove.</code><code class="sig-name descname">find_del_alpha</code><span class="sig-paren">(</span><em class="sig-param">current_stimulus_id</em>, <em class="sig-param">current_stimulus</em>, <em class="sig-param">lambda_alpha</em>, <em class="sig-param">c</em>, <em class="sig-param">hidden_representation</em>, <em class="sig-param">output_activations</em>, <em class="sig-param">hidden_activations</em>, <em class="sig-param">w</em>, <em class="sig-param">categories</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.find_del_alpha" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function that calculates the amount of change that should be added to each dimension’s attentional weight
 in the learning phase</p>
 <dl class="field-list simple">
@@ -214,7 +214,7 @@ learning phase</p>
 
 <dl class="function">
 <dt id="Alcove.alcove.find_del_w">
-<code class="descclassname">Alcove.alcove.</code><code class="descname">find_del_w</code><span class="sig-paren">(</span><em>lambda_w</em>, <em>output_activations</em>, <em>hidden_activations</em>, <em>categories</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.find_del_w" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">Alcove.alcove.</code><code class="sig-name descname">find_del_w</code><span class="sig-paren">(</span><em class="sig-param">lambda_w</em>, <em class="sig-param">output_activations</em>, <em class="sig-param">hidden_activations</em>, <em class="sig-param">categories</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.find_del_w" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function that calculates the amount of change that should be added to w in the learning phase</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -239,7 +239,7 @@ categories_Idx = [[0,2,4],[1,3]]</p></li>
 
 <dl class="function">
 <dt id="Alcove.alcove.hidden_layer_activations">
-<code class="descclassname">Alcove.alcove.</code><code class="descname">hidden_layer_activations</code><span class="sig-paren">(</span><em>current_stimulus</em>, <em>stimulus_representation</em>, <em>hidden_representation</em>, <em>alpha</em>, <em>r</em>, <em>q</em>, <em>c</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.hidden_layer_activations" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">Alcove.alcove.</code><code class="sig-name descname">hidden_layer_activations</code><span class="sig-paren">(</span><em class="sig-param">current_stimulus</em>, <em class="sig-param">stimulus_representation</em>, <em class="sig-param">hidden_representation</em>, <em class="sig-param">alpha</em>, <em class="sig-param">r</em>, <em class="sig-param">q</em>, <em class="sig-param">c</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.hidden_layer_activations" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function that calculates the hidden layer activations</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -275,7 +275,7 @@ values of c results in wide activation profiles. It is one of the free parameter
 
 <dl class="function">
 <dt id="Alcove.alcove.output_layer_activations">
-<code class="descclassname">Alcove.alcove.</code><code class="descname">output_layer_activations</code><span class="sig-paren">(</span><em>categories</em>, <em>hidden_activations</em>, <em>w</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.output_layer_activations" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">Alcove.alcove.</code><code class="sig-name descname">output_layer_activations</code><span class="sig-paren">(</span><em class="sig-param">categories</em>, <em class="sig-param">hidden_activations</em>, <em class="sig-param">w</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.output_layer_activations" title="Permalink to this definition">¶</a></dt>
 <dd><p>Each category is represented as a node in the output layer. This function calculates the activations of each of
 these output category nodes</p>
 <dl class="field-list simple">
@@ -301,7 +301,7 @@ nodes and three hidden layer nodes, then w could be [[0.5, 0.2], [0.3, 0.7], [-0
 
 <dl class="function">
 <dt id="Alcove.alcove.probability_of_category">
-<code class="descclassname">Alcove.alcove.</code><code class="descname">probability_of_category</code><span class="sig-paren">(</span><em>K</em>, <em>phi</em>, <em>output_activations</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.probability_of_category" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">Alcove.alcove.</code><code class="sig-name descname">probability_of_category</code><span class="sig-paren">(</span><em class="sig-param">K</em>, <em class="sig-param">phi</em>, <em class="sig-param">output_activations</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.probability_of_category" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function that calculates the probability of categorizing the current stimulus into category K</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -322,7 +322,7 @@ nodes and three hidden layer nodes, then w could be [[0.5, 0.2], [0.3, 0.7], [-0
 
 <dl class="function">
 <dt id="Alcove.alcove.teacher">
-<code class="descclassname">Alcove.alcove.</code><code class="descname">teacher</code><span class="sig-paren">(</span><em>i</em>, <em>K</em>, <em>categories</em>, <em>output_activations</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.teacher" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">Alcove.alcove.</code><code class="sig-name descname">teacher</code><span class="sig-paren">(</span><em class="sig-param">i</em>, <em class="sig-param">K</em>, <em class="sig-param">categories</em>, <em class="sig-param">output_activations</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.teacher" title="Permalink to this definition">¶</a></dt>
 <dd><p>Feedback in learning is given in the form of teacher values. This is the function that calculates these values</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
