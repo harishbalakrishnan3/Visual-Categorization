@@ -1,0 +1,378 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Varying Abstraction Model(VAM) &mdash; Visual Categorization 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Datasets" href="../../datasets/index.html" />
+    <link rel="prev" title="ALCOVE Model" href="../Alcove/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Visual Categorization
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Categorization Models</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../GCM/index.html">Generalized Context Model (GCM)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../GCM/index.html#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Prototype/index.html">Prototype Model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prototype/index.html#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Alcove/index.html">ALCOVE Model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Alcove/index.html#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Varying Abstraction Model(VAM)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example">Example</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#script-output">Script output</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../datasets/index.html">Datasets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../datasets/nosofsky1986.html">nosofsky1986</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../datasets/nosofsky2017.html">nosofsky2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../datasets/medin1978.html">medin1978</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../datasets/shepard1961.html">shepard1961</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Visual Categorization</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Categorization Models</a> &raquo;</li>
+        
+      <li>Varying Abstraction Model(VAM)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/models/VAM/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="varying-abstraction-model-vam">
+<h1>Varying Abstraction Model(VAM)<a class="headerlink" href="#varying-abstraction-model-vam" title="Permalink to this headline">¶</a></h1>
+<p>Reference: <a class="reference internal" href="#wogb05" id="id1"><span>[WoGB05]</span></a></p>
+<p>Module : <a class="reference download internal" download="" href="../../_downloads/d44fe651c8d7be3eddfc66c2ae11f12e/vam.py"><code class="xref download docutils literal notranslate"><span class="pre">VAM</span></code></a></p>
+<p>The above module contains the necessary functions that aid in implementing the Varying Abstraction Model of
+Categorization. The documentation for these functions is described below.</p>
+<span class="target" id="module-VAM.vam"></span><dl class="function">
+<dt id="VAM.vam.generate_family_of_partitions">
+<code class="sig-prename descclassname">VAM.vam.</code><code class="sig-name descname">generate_family_of_partitions</code><span class="sig-paren">(</span><em class="sig-param">list_of_elements</em><span class="sig-paren">)</span><a class="headerlink" href="#VAM.vam.generate_family_of_partitions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that generates the family of partitions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>list_of_elements</strong> (<em>list</em>) – The collection of elements for which we seek the family of partitions. For example,
+if list_of_elements = [1,2,3], then this function will return [[[1, 2, 3]], [[1], [2, 3]], [[1, 2], [3]], [[2],
+[1, 3]], [[1], [2], [3]]]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of the family of partitions</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="VAM.vam.generate_sub_prototypes">
+<code class="sig-prename descclassname">VAM.vam.</code><code class="sig-name descname">generate_sub_prototypes</code><span class="sig-paren">(</span><em class="sig-param">family</em><span class="sig-paren">)</span><a class="headerlink" href="#VAM.vam.generate_sub_prototypes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that generates the sub-prototypes or pseudo-exemplars</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>family</strong> (<em>list</em>) – List containing the family of all possible representation models for a given category. For example, if category
+A had five exemplars, then this list should contain all the 52 possible pseudo-exemplar sets.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of all sub-prototypes or pseudo-exemplars for the given family of representations of a category.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="VAM.vam.probability_of_category_A">
+<code class="sig-prename descclassname">VAM.vam.</code><code class="sig-name descname">probability_of_category_A</code><span class="sig-paren">(</span><em class="sig-param">stimulus_i</em>, <em class="sig-param">category_a_exemplars</em>, <em class="sig-param">category_b_exemplars</em>, <em class="sig-param">w</em>, <em class="sig-param">c</em>, <em class="sig-param">r</em>, <em class="sig-param">alpha</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#VAM.vam.probability_of_category_A" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that calculates the probability of stimulus_i belonging to category A. Note that this assumes there are
+only two categories in total, which is typical of categorization experiments</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>stimulus_i</strong> (<em>list</em>) – Stimulus representation in the psychological space. For example, stimulus_i could be [0, 1, 1, 0]</p></li>
+<li><p><strong>category_a_exemplars</strong> (<em>list</em>) – List of category A (pseudo)exemplars</p></li>
+<li><p><strong>category_b_exemplars</strong> (<em>list</em>) – List of category B (pseudo)exemplars</p></li>
+<li><p><strong>w</strong> (<em>list</em>) – List of weights corresponding to each dimension of the stimulus in the psychological space</p></li>
+<li><p><strong>c</strong> (<em>float</em>) – Scale parameter that is used in the distance calculation</p></li>
+<li><p><strong>r</strong> (<em>int</em>) – Minkowski’s distance metric. A value of 1 corresponds to city-block metric (generally used when the stimuli has
+separable dimensions) ; A value of 2 corresponds to Eucledian distance metric (generally used when the stimuli
+has integral dimensions)</p></li>
+<li><p><strong>alpha</strong> (<em>int</em>) – Parameter that scales the psychological distance between stimulus_i and stimulus_j. The value of alpha = 2
+corresponds to the gaussian similarity</p></li>
+<li><p><strong>b</strong> (<em>list</em>) – List of biases for the categories</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Calculates the probability of stimulus_i belonging to category A</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="VAM.vam.similarity">
+<code class="sig-prename descclassname">VAM.vam.</code><code class="sig-name descname">similarity</code><span class="sig-paren">(</span><em class="sig-param">stimulus_i</em>, <em class="sig-param">stimulus_j</em>, <em class="sig-param">w</em>, <em class="sig-param">c</em>, <em class="sig-param">r</em>, <em class="sig-param">alpha</em><span class="sig-paren">)</span><a class="headerlink" href="#VAM.vam.similarity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that calculates the similarity of stimulus_i and stimulus_j</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>stimulus_i</strong> (<em>list</em>) – Stimulus representation in the psychological space. For example, stimulus_i could be [0, 1, 1, 0]</p></li>
+<li><p><strong>stimulus_j</strong> (<em>list</em>) – Stimulus representation in the psychological space. For example, stimulus_i could be [1, 0, 0, 1]</p></li>
+<li><p><strong>w</strong> (<em>list</em>) – List of weights corresponding to each dimension of the stimulus in the psychological space</p></li>
+<li><p><strong>c</strong> (<em>float</em>) – Scale parameter that is used in the distance calculation</p></li>
+<li><p><strong>r</strong> (<em>int</em>) – Minkowski’s distance metric. A value of 1 corresponds to city-block metric (generally used when the stimuli has
+separable dimensions) ; A value of 2 corresponds to Eucledian distance metric (generally used when the stimuli
+has integral dimensions)</p></li>
+<li><p><strong>alpha</strong> (<em>int</em>) – Parameter that scales the psychological distance between stimulus_i and stimulus_j. The value of alpha = 2
+corresponds to the gaussian similarity</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The similarity between stimulus_i and stimulus_j</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="VAM.vam.similarity_of_i_to_category">
+<code class="sig-prename descclassname">VAM.vam.</code><code class="sig-name descname">similarity_of_i_to_category</code><span class="sig-paren">(</span><em class="sig-param">stimulus_i</em>, <em class="sig-param">category_exemplars</em>, <em class="sig-param">w</em>, <em class="sig-param">c</em>, <em class="sig-param">r</em>, <em class="sig-param">alpha</em><span class="sig-paren">)</span><a class="headerlink" href="#VAM.vam.similarity_of_i_to_category" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that calculates the similarity of stimulus_i to a particular category exemplars</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>stimulus_i</strong> (<em>list</em>) – Stimulus representation in the psychological space. For example, stimulus_i could be [0, 1, 1, 0]</p></li>
+<li><p><strong>category_exemplars</strong> (<em>list</em>) – List of category (pseudo)exemplars</p></li>
+<li><p><strong>w</strong> (<em>list</em>) – List of weights corresponding to each dimension of the stimulus in the psychological space</p></li>
+<li><p><strong>c</strong> (<em>float</em>) – Scale parameter that is used in the distance calculation</p></li>
+<li><p><strong>r</strong> (<em>int</em>) – Minkowski’s distance metric. A value of 1 corresponds to city-block metric (generally used when the stimuli has
+separable dimensions) ; A value of 2 corresponds to Eucledian distance metric (generally used when the stimuli
+has integral dimensions)</p></li>
+<li><p><strong>alpha</strong> (<em>int</em>) – Parameter that scales the psychological distance between stimulus_i and stimulus_j. The value of alpha = 2
+corresponds to the gaussian similarity</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The similarity of stimulus_i to category_exemplars</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>A Sample Script : <a class="reference download internal" download="" href="../../_downloads/27b193744682b79ebea16bc83d02cbc9/sample.py"><code class="xref download docutils literal notranslate"><span class="pre">sample</span></code></a></p>
+<p>The above script illustrates how one can use the vam module. As an example, the above script generates the best fit
+pseudo-exemplar model, the corresponding model parameters and the minimum SSE. Note that this is slightly better than
+the values reported in <a class="reference internal" href="#wogb05" id="id2"><span>[WoGB05]</span></a>.</p>
+<div class="section" id="script-output">
+<h3>Script output<a class="headerlink" href="#script-output" title="Permalink to this headline">¶</a></h3>
+<p><strong>Min SSE</strong>: <em>0.017690536590039677</em></p>
+<p><strong>Best w</strong>:  <em>[0.18963272, 0.19145339, 0.17382783, 0.44508607]</em></p>
+<p><strong>Best c</strong>:  <em>11.285734631083642</em></p>
+<p><strong>Best b</strong>:  <em>[0.07793568, 0.92206432]</em></p>
+<p class="rubric">References</p>
+<dl class="citation">
+<dt class="label" id="wogb05"><span class="brackets">WoGB05</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dd><p>Vanpaemel, Wolf; Storms, Gert; Ons, Bart: A Varying Abstraction Model for Categorization. In: B. Bara, L. Barsalou, &amp; M. Bucciarelli (Eds.), Proceedings of the 27th annual conference of the Cognitive Science Society (pp. 2277–2282). Mahwah, NJ: Lawrence Erlbaum.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../datasets/index.html" class="btn btn-neutral float-right" title="Datasets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../Alcove/index.html" class="btn btn-neutral float-left" title="ALCOVE Model" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Harish Balakrishnan
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
