@@ -10,3 +10,4 @@ Click on the respective links below to view the documentation.
    GCM/index
    Prototype/index
    Alcove/index
+   VAM/index
