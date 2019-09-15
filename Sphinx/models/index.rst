@@ -7,7 +7,8 @@ Click on the respective links below to view the documentation.
 .. toctree::
    :maxdepth: 1
 
-   GCM/index
    Prototype/index
+   GCM/index
    Alcove/index
+   RMC/index
    VAM/index

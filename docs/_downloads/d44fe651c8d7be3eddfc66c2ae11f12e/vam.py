@@ -83,7 +83,7 @@ def generate_sub_prototypes(family):
 
 def similarity(stimulus_i, stimulus_j, w, c, r, alpha):
     """
-    Function that calculates the similarity of stimulus_i and stimulus_j
+    Function that calculates the similarity of stimulus_i and stimulus_j (equation 2 in [WoGB05]_)
 
     Parameters
     ----------
@@ -111,7 +111,7 @@ def similarity(stimulus_i, stimulus_j, w, c, r, alpha):
 
     def distance():
         """
-        Calculates the distance between two stimulus
+        Calculates the distance between two stimulus in the psychological space (equation 3 in [WoGB05]_)
 
         Returns
         -------
@@ -130,7 +130,7 @@ def similarity(stimulus_i, stimulus_j, w, c, r, alpha):
 
 def similarity_of_i_to_category(stimulus_i, category_exemplars, w, c, r, alpha):
     """
-    Function that calculates the similarity of stimulus_i to a particular category exemplars
+    Function that calculates the similarity of stimulus_i to a particular category exemplars (equation 11 in [WoGB05]_)
 
     Parameters
     ----------
@@ -165,7 +165,7 @@ def similarity_of_i_to_category(stimulus_i, category_exemplars, w, c, r, alpha):
 def probability_of_category_A(stimulus_i, category_a_exemplars, category_b_exemplars, w, c, r, alpha, b):
     """
     Function that calculates the probability of stimulus_i belonging to category A. Note that this assumes there are
-    only two categories in total, which is typical of categorization experiments
+    only two categories in total, which is typical of categorization experiments (equation 1 in [WoGB05]_)
 
     Parameters
     ----------

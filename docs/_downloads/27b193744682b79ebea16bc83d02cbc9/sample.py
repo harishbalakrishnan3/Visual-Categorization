@@ -1,10 +1,8 @@
 """
 A sample python script that illustrates how to use the vam module.
 As a first step, we need to find the model's parameters - c,w,b (we will assume r = 1 and alpha = 1).
-This is done using MLE. After we find the parameters, we use them to find the corresponding probabilities using the
-functions from the gcm module.
-The following script illustrates the procedure for Subject1. GCM predicted probabilities of all four categorization
-types are derived and the graph is plotted in the end.
+This is done using MLE. After we find the parameters, we display the best category structure for category A and
+category B
 """
 
 import pandas as pd, numpy as np

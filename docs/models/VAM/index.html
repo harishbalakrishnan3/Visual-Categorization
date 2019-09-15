@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Varying Abstraction Model(VAM) &mdash; Visual Categorization 1.0 documentation</title>
+  <title>Varying Abstraction Model (VAM) &mdash; Visual Categorization 1.0 documentation</title>
   
 
   
@@ -36,7 +36,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Datasets" href="../../datasets/index.html" />
-    <link rel="prev" title="ALCOVE Model" href="../Alcove/index.html" /> 
+    <link rel="prev" title="Rational Model of Categorization (RMC)" href="../RMC/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,19 +83,11 @@
               <p class="caption"><span class="caption-text">Contents</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Categorization Models</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../GCM/index.html">Generalized Context Model (GCM)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../GCM/index.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../Prototype/index.html">Prototype Model</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Prototype/index.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../Alcove/index.html">ALCOVE Model</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Alcove/index.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Varying Abstraction Model(VAM)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../GCM/index.html">Generalized Context Model (GCM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Prototype/index.html">Prototype Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Alcove/index.html">ALCOVE Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../RMC/index.html">Rational Model of Categorization (RMC)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Varying Abstraction Model (VAM)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#example">Example</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#script-output">Script output</a></li>
 </ul>
@@ -104,13 +96,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../datasets/index.html">Datasets</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../datasets/nosofsky1986.html">nosofsky1986</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../datasets/nosofsky2017.html">nosofsky2017</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../datasets/medin1978.html">medin1978</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../datasets/shepard1961.html">shepard1961</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../datasets/index.html">Datasets</a></li>
 </ul>
 
             
@@ -158,7 +144,7 @@
         
           <li><a href="../index.html">Categorization Models</a> &raquo;</li>
         
-      <li>Varying Abstraction Model(VAM)</li>
+      <li>Varying Abstraction Model (VAM)</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -178,7 +164,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="varying-abstraction-model-vam">
-<h1>Varying Abstraction Model(VAM)<a class="headerlink" href="#varying-abstraction-model-vam" title="Permalink to this headline">¶</a></h1>
+<h1>Varying Abstraction Model (VAM)<a class="headerlink" href="#varying-abstraction-model-vam" title="Permalink to this headline">¶</a></h1>
 <p>Reference: <a class="reference internal" href="#wogb05" id="id1"><span>[WoGB05]</span></a></p>
 <p>Module : <a class="reference download internal" download="" href="../../_downloads/d44fe651c8d7be3eddfc66c2ae11f12e/vam.py"><code class="xref download docutils literal notranslate"><span class="pre">VAM</span></code></a></p>
 <p>The above module contains the necessary functions that aid in implementing the Varying Abstraction Model of
@@ -224,7 +210,7 @@ A had five exemplars, then this list should contain all the 52 possible pseudo-e
 <dt id="VAM.vam.probability_of_category_A">
 <code class="sig-prename descclassname">VAM.vam.</code><code class="sig-name descname">probability_of_category_A</code><span class="sig-paren">(</span><em class="sig-param">stimulus_i</em>, <em class="sig-param">category_a_exemplars</em>, <em class="sig-param">category_b_exemplars</em>, <em class="sig-param">w</em>, <em class="sig-param">c</em>, <em class="sig-param">r</em>, <em class="sig-param">alpha</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#VAM.vam.probability_of_category_A" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function that calculates the probability of stimulus_i belonging to category A. Note that this assumes there are
-only two categories in total, which is typical of categorization experiments</p>
+only two categories in total, which is typical of categorization experiments (equation 1 in <a class="reference internal" href="#wogb05" id="id2"><span>[WoGB05]</span></a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -253,7 +239,7 @@ corresponds to the gaussian similarity</p></li>
 <dl class="function">
 <dt id="VAM.vam.similarity">
 <code class="sig-prename descclassname">VAM.vam.</code><code class="sig-name descname">similarity</code><span class="sig-paren">(</span><em class="sig-param">stimulus_i</em>, <em class="sig-param">stimulus_j</em>, <em class="sig-param">w</em>, <em class="sig-param">c</em>, <em class="sig-param">r</em>, <em class="sig-param">alpha</em><span class="sig-paren">)</span><a class="headerlink" href="#VAM.vam.similarity" title="Permalink to this definition">¶</a></dt>
-<dd><p>Function that calculates the similarity of stimulus_i and stimulus_j</p>
+<dd><p>Function that calculates the similarity of stimulus_i and stimulus_j (equation 2 in <a class="reference internal" href="#wogb05" id="id3"><span>[WoGB05]</span></a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -280,7 +266,7 @@ corresponds to the gaussian similarity</p></li>
 <dl class="function">
 <dt id="VAM.vam.similarity_of_i_to_category">
 <code class="sig-prename descclassname">VAM.vam.</code><code class="sig-name descname">similarity_of_i_to_category</code><span class="sig-paren">(</span><em class="sig-param">stimulus_i</em>, <em class="sig-param">category_exemplars</em>, <em class="sig-param">w</em>, <em class="sig-param">c</em>, <em class="sig-param">r</em>, <em class="sig-param">alpha</em><span class="sig-paren">)</span><a class="headerlink" href="#VAM.vam.similarity_of_i_to_category" title="Permalink to this definition">¶</a></dt>
-<dd><p>Function that calculates the similarity of stimulus_i to a particular category exemplars</p>
+<dd><p>Function that calculates the similarity of stimulus_i to a particular category exemplars (equation 11 in <a class="reference internal" href="#wogb05" id="id4"><span>[WoGB05]</span></a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -310,7 +296,7 @@ corresponds to the gaussian similarity</p></li>
 <p>The above script illustrates how one can use the vam module. As an example, the above script generates the best fit
 pseudo-exemplar model, the corresponding model parameters and the minimum SSE. For the optimization,
 scipy.optimize.minimize is used to minimize the SSE. Note that the following results are slightly better than the
-values reported in <a class="reference internal" href="#wogb05" id="id2"><span>[WoGB05]</span></a>. This could be due to the different optimization tools used in the implementation of the
+values reported in <a class="reference internal" href="#wogb05" id="id5"><span>[WoGB05]</span></a>. This could be due to the different optimization tools used in the implementation of the
 model by the authors and in the example script here.</p>
 <div class="section" id="script-output">
 <h3>Script output<a class="headerlink" href="#script-output" title="Permalink to this headline">¶</a></h3>
@@ -323,7 +309,7 @@ model by the authors and in the example script here.</p>
 <p><strong>Category B</strong>: <em>[[0, 0, 0, 1], [0.33, 0.67, 0.33, 0.0]]</em></p>
 <p class="rubric">References</p>
 <dl class="citation">
-<dt class="label" id="wogb05"><span class="brackets">WoGB05</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dt class="label" id="wogb05"><span class="brackets">WoGB05</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>,<a href="#id3">3</a>,<a href="#id4">4</a>,<a href="#id5">5</a>)</span></dt>
 <dd><p>Vanpaemel, Wolf; Storms, Gert; Ons, Bart: A Varying Abstraction Model for Categorization. In: B. Bara, L. Barsalou, &amp; M. Bucciarelli (Eds.), Proceedings of the 27th annual conference of the Cognitive Science Society (pp. 2277–2282). Mahwah, NJ: Lawrence Erlbaum.</p>
 </dd>
 </dl>
@@ -342,7 +328,7 @@ model by the authors and in the example script here.</p>
         <a href="../../datasets/index.html" class="btn btn-neutral float-right" title="Datasets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../Alcove/index.html" class="btn btn-neutral float-left" title="ALCOVE Model" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../RMC/index.html" class="btn btn-neutral float-left" title="Rational Model of Categorization (RMC)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

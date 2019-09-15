@@ -7,7 +7,7 @@ import numpy as np
 
 def gaussian_similarity(stimulus_representation, i, j, w, c, r):
     """
-    Function that calculates and returns the gaussian similarity of stimuli i and j
+    Function that calculates and returns the gaussian similarity of stimuli i and j (equation 4b in [Noso86]_)
 
     Parameters
     ----------
@@ -34,7 +34,7 @@ def gaussian_similarity(stimulus_representation, i, j, w, c, r):
     """
     def distance():
         """
-        Calculates the distance between two stimulus
+        Calculates the distance between two stimulus (equation 6 in [Noso86]_)
 
         Returns
         -------
@@ -52,7 +52,7 @@ def gaussian_similarity(stimulus_representation, i, j, w, c, r):
 
 def probability_of_category_J(J, stimulus_representation, w, c, r, i, categories_idx, b):
     """
-    Function that calculates the probability of category J, given stimulus i
+    Function that calculates the probability of category J, given stimulus i (equation 5 in [Noso86]_)
 
     Parameters
     ----------

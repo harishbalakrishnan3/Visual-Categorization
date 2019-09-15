@@ -1,5 +1,5 @@
-Varying Abstraction Model(VAM)
-==============================
+Varying Abstraction Model (VAM)
+===============================
 
 Reference: [WoGB05]_
 

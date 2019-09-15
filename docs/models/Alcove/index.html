@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Datasets" href="../../datasets/index.html" />
+    <link rel="next" title="Rational Model of Categorization (RMC)" href="../RMC/index.html" />
     <link rel="prev" title="Prototype Model" href="../Prototype/index.html" /> 
 </head>
 
@@ -83,27 +83,17 @@
               <p class="caption"><span class="caption-text">Contents</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Categorization Models</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../GCM/index.html">Generalized Context Model (GCM)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../GCM/index.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../Prototype/index.html">Prototype Model</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Prototype/index.html#example">Example</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../GCM/index.html">Generalized Context Model (GCM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Prototype/index.html">Prototype Model</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">ALCOVE Model</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../RMC/index.html">Rational Model of Categorization (RMC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../VAM/index.html">Varying Abstraction Model (VAM)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../datasets/index.html">Datasets</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../datasets/nosofsky1986.html">nosofsky1986</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../datasets/nosofsky2017.html">nosofsky2017</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../datasets/medin1978.html">medin1978</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../datasets/shepard1961.html">shepard1961</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../datasets/index.html">Datasets</a></li>
 </ul>
 
             
@@ -180,7 +170,7 @@ for these functions is described below.</p>
 <dt id="Alcove.alcove.find_del_alpha">
 <code class="sig-prename descclassname">Alcove.alcove.</code><code class="sig-name descname">find_del_alpha</code><span class="sig-paren">(</span><em class="sig-param">current_stimulus_id</em>, <em class="sig-param">current_stimulus</em>, <em class="sig-param">lambda_alpha</em>, <em class="sig-param">c</em>, <em class="sig-param">hidden_representation</em>, <em class="sig-param">output_activations</em>, <em class="sig-param">hidden_activations</em>, <em class="sig-param">w</em>, <em class="sig-param">categories</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.find_del_alpha" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function that calculates the amount of change that should be added to each dimension’s attentional weight
-in the learning phase</p>
+in the learning phase (equation 6 in <a class="reference internal" href="#krus92" id="id2"><span>[Krus92]</span></a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -215,7 +205,8 @@ learning phase</p>
 <dl class="function">
 <dt id="Alcove.alcove.find_del_w">
 <code class="sig-prename descclassname">Alcove.alcove.</code><code class="sig-name descname">find_del_w</code><span class="sig-paren">(</span><em class="sig-param">lambda_w</em>, <em class="sig-param">output_activations</em>, <em class="sig-param">hidden_activations</em>, <em class="sig-param">categories</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.find_del_w" title="Permalink to this definition">¶</a></dt>
-<dd><p>Function that calculates the amount of change that should be added to w in the learning phase</p>
+<dd><p>Function that calculates the amount of change that should be added to w in the learning phase (equation 5 in
+<a class="reference internal" href="#krus92" id="id3"><span>[Krus92]</span></a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -240,7 +231,7 @@ categories_Idx = [[0,2,4],[1,3]]</p></li>
 <dl class="function">
 <dt id="Alcove.alcove.hidden_layer_activations">
 <code class="sig-prename descclassname">Alcove.alcove.</code><code class="sig-name descname">hidden_layer_activations</code><span class="sig-paren">(</span><em class="sig-param">current_stimulus</em>, <em class="sig-param">stimulus_representation</em>, <em class="sig-param">hidden_representation</em>, <em class="sig-param">alpha</em>, <em class="sig-param">r</em>, <em class="sig-param">q</em>, <em class="sig-param">c</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.hidden_layer_activations" title="Permalink to this definition">¶</a></dt>
-<dd><p>Function that calculates the hidden layer activations</p>
+<dd><p>Function that calculates the hidden layer activations (equation 1 in <a class="reference internal" href="#krus92" id="id4"><span>[Krus92]</span></a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -277,7 +268,7 @@ values of c results in wide activation profiles. It is one of the free parameter
 <dt id="Alcove.alcove.output_layer_activations">
 <code class="sig-prename descclassname">Alcove.alcove.</code><code class="sig-name descname">output_layer_activations</code><span class="sig-paren">(</span><em class="sig-param">categories</em>, <em class="sig-param">hidden_activations</em>, <em class="sig-param">w</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.output_layer_activations" title="Permalink to this definition">¶</a></dt>
 <dd><p>Each category is represented as a node in the output layer. This function calculates the activations of each of
-these output category nodes</p>
+these output category nodes (equation 2 in <a class="reference internal" href="#krus92" id="id5"><span>[Krus92]</span></a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -302,7 +293,8 @@ nodes and three hidden layer nodes, then w could be [[0.5, 0.2], [0.3, 0.7], [-0
 <dl class="function">
 <dt id="Alcove.alcove.probability_of_category">
 <code class="sig-prename descclassname">Alcove.alcove.</code><code class="sig-name descname">probability_of_category</code><span class="sig-paren">(</span><em class="sig-param">K</em>, <em class="sig-param">phi</em>, <em class="sig-param">output_activations</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.probability_of_category" title="Permalink to this definition">¶</a></dt>
-<dd><p>Function that calculates the probability of categorizing the current stimulus into category K</p>
+<dd><p>Function that calculates the probability of categorizing the current stimulus into category K (equation 3 in
+<a class="reference internal" href="#krus92" id="id6"><span>[Krus92]</span></a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -323,7 +315,8 @@ nodes and three hidden layer nodes, then w could be [[0.5, 0.2], [0.3, 0.7], [-0
 <dl class="function">
 <dt id="Alcove.alcove.teacher">
 <code class="sig-prename descclassname">Alcove.alcove.</code><code class="sig-name descname">teacher</code><span class="sig-paren">(</span><em class="sig-param">i</em>, <em class="sig-param">K</em>, <em class="sig-param">categories</em>, <em class="sig-param">output_activations</em><span class="sig-paren">)</span><a class="headerlink" href="#Alcove.alcove.teacher" title="Permalink to this definition">¶</a></dt>
-<dd><p>Feedback in learning is given in the form of teacher values. This is the function that calculates these values</p>
+<dd><p>Function that calculates the feedback in learning, which is supplied in the form of teacher values (equation 4b in
+<a class="reference internal" href="#krus92" id="id7"><span>[Krus92]</span></a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -348,15 +341,15 @@ phase.</p>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <p>A Sample Script : <a class="reference download internal" download="" href="../../_downloads/30ee4023ae56ac1add2aac7595e47476/sample.py"><code class="xref download docutils literal notranslate"><span class="pre">sample</span></code></a></p>
-<p>The above script illustrates how one can use the alcove module. As an example, the above script generates the plot in figure 5 of <a class="reference internal" href="#krus92" id="id2"><span>[Krus92]</span></a> for non zero attentional learning.
-The data set of <a class="reference internal" href="#shhj61" id="id3"><span>[ShHJ61]</span></a> is used.</p>
+<p>The above script illustrates how one can use the alcove module. As an example, the above script generates the plot in figure 5 of <a class="reference internal" href="#krus92" id="id8"><span>[Krus92]</span></a> for non zero attentional learning.
+The data set of <a class="reference internal" href="#shhj61" id="id9"><span>[ShHJ61]</span></a> is used.</p>
 <img alt="../../_images/sample.png" src="../../_images/sample.png" />
 <p class="rubric">References</p>
 <dl class="citation">
-<dt class="label" id="krus92"><span class="brackets">Krus92</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dt class="label" id="krus92"><span class="brackets">Krus92</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>,<a href="#id3">3</a>,<a href="#id4">4</a>,<a href="#id5">5</a>,<a href="#id6">6</a>,<a href="#id7">7</a>,<a href="#id8">8</a>)</span></dt>
 <dd><p>Kruschke, John K.: ALCOVE An Exemplar-Based Connectionist Model of Category Learning. In: Psychological Review. 1992, Vol. 99, No. 1, 22-44.</p>
 </dd>
-<dt class="label" id="shhj61"><span class="brackets"><a class="fn-backref" href="#id3">ShHJ61</a></span></dt>
+<dt class="label" id="shhj61"><span class="brackets"><a class="fn-backref" href="#id9">ShHJ61</a></span></dt>
 <dd><p>Shepard, R. N., Hovland; C. L.; Jenkins, H. M.: Learning and memorization of classifications. In: Psychological Monographs. 75(13, Whole No. 517).</p>
 </dd>
 </dl>
@@ -371,7 +364,7 @@ The data set of <a class="reference internal" href="#shhj61" id="id3"><span>[ShH
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../datasets/index.html" class="btn btn-neutral float-right" title="Datasets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../RMC/index.html" class="btn btn-neutral float-right" title="Rational Model of Categorization (RMC)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../Prototype/index.html" class="btn btn-neutral float-left" title="Prototype Model" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

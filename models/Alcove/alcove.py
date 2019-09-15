@@ -6,7 +6,7 @@ import numpy as np
 
 def hidden_layer_activations(current_stimulus, stimulus_representation, hidden_representation, alpha, r, q, c):
     """
-    Function that calculates the hidden layer activations
+    Function that calculates the hidden layer activations (equation 1 in [Krus92]_)
 
     Parameters
     ----------
@@ -59,7 +59,7 @@ def hidden_layer_activations(current_stimulus, stimulus_representation, hidden_r
 def output_layer_activations(categories, hidden_activations, w):
     """
     Each category is represented as a node in the output layer. This function calculates the activations of each of
-    these output category nodes
+    these output category nodes (equation 2 in [Krus92]_)
 
     Parameters
     ----------
@@ -93,7 +93,8 @@ def output_layer_activations(categories, hidden_activations, w):
 
 def probability_of_category(K, phi, output_activations):
     """
-    Function that calculates the probability of categorizing the current stimulus into category K
+    Function that calculates the probability of categorizing the current stimulus into category K (equation 3 in
+    [Krus92]_)
 
     Parameters
     ----------
@@ -120,7 +121,8 @@ def probability_of_category(K, phi, output_activations):
 
 def teacher(i, K, categories, output_activations):
     """
-    Feedback in learning is given in the form of teacher values. This is the function that calculates these values
+    Function that calculates the feedback in learning, which is supplied in the form of teacher values (equation 4b in
+    [Krus92]_)
 
     Parameters
     ----------
@@ -155,7 +157,8 @@ def teacher(i, K, categories, output_activations):
 
 def find_del_w(lambda_w, output_activations, hidden_activations, categories):
     """
-    Function that calculates the amount of change that should be added to w in the learning phase
+    Function that calculates the amount of change that should be added to w in the learning phase (equation 5 in
+    [Krus92]_)
 
     Parameters
     ----------
@@ -192,7 +195,7 @@ def find_del_alpha(current_stimulus_id, current_stimulus, lambda_alpha, c, hidde
                    output_activations, hidden_activations, w, categories):
     """
     Function that calculates the amount of change that should be added to each dimension's attentional weight
-    in the learning phase
+    in the learning phase (equation 6 in [Krus92]_)
 
     Parameters
     ----------

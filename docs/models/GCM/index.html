@@ -87,23 +87,13 @@
 <li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Prototype/index.html">Prototype Model</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Prototype/index.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Prototype/index.html">Prototype Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Alcove/index.html">ALCOVE Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../RMC/index.html">Rational Model of Categorization (RMC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../VAM/index.html">Varying Abstraction Model (VAM)</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Alcove/index.html">ALCOVE Model</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Alcove/index.html#example">Example</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../datasets/index.html">Datasets</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../datasets/nosofsky1986.html">nosofsky1986</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../datasets/nosofsky2017.html">nosofsky2017</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../datasets/medin1978.html">medin1978</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../datasets/shepard1961.html">shepard1961</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../datasets/index.html">Datasets</a></li>
 </ul>
 
             
@@ -211,7 +201,7 @@ categories_Idx = [[0,2,4],[1,3]]</p></li>
 <dl class="function">
 <dt id="GCM.gcm.gaussian_similarity">
 <code class="sig-prename descclassname">GCM.gcm.</code><code class="sig-name descname">gaussian_similarity</code><span class="sig-paren">(</span><em class="sig-param">stimulus_representation</em>, <em class="sig-param">i</em>, <em class="sig-param">j</em>, <em class="sig-param">w</em>, <em class="sig-param">c</em>, <em class="sig-param">r</em><span class="sig-paren">)</span><a class="headerlink" href="#GCM.gcm.gaussian_similarity" title="Permalink to this definition">¶</a></dt>
-<dd><p>Function that calculates and returns the gaussian similarity of stimuli i and j</p>
+<dd><p>Function that calculates and returns the gaussian similarity of stimuli i and j (equation 4b in <a class="reference internal" href="#noso86" id="id2"><span>[Noso86]</span></a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -238,7 +228,7 @@ the stimuli has integral dimensions)</p></li>
 <dl class="function">
 <dt id="GCM.gcm.probability_of_category_J">
 <code class="sig-prename descclassname">GCM.gcm.</code><code class="sig-name descname">probability_of_category_J</code><span class="sig-paren">(</span><em class="sig-param">J</em>, <em class="sig-param">stimulus_representation</em>, <em class="sig-param">w</em>, <em class="sig-param">c</em>, <em class="sig-param">r</em>, <em class="sig-param">i</em>, <em class="sig-param">categories_idx</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#GCM.gcm.probability_of_category_J" title="Permalink to this definition">¶</a></dt>
-<dd><p>Function that calculates the probability of category J, given stimulus i</p>
+<dd><p>Function that calculates the probability of category J, given stimulus i (equation 5 in <a class="reference internal" href="#noso86" id="id3"><span>[Noso86]</span></a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -269,11 +259,11 @@ categories_Idx = [[0,2,4],[1,3]]</p></li>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <p>A Sample Script : <a class="reference download internal" download="" href="../../_downloads/d6b1e39143e3255799ec607967cb9223/sample.py"><code class="xref download docutils literal notranslate"><span class="pre">sample</span></code></a></p>
-<p>The above script illustrates how one can use the gcm module. As an example, the above script generates the plot in figure 7 of <a class="reference internal" href="#noso86" id="id2"><span>[Noso86]</span></a> for subject 1.</p>
+<p>The above script illustrates how one can use the gcm module. As an example, the above script generates the plot in figure 7 of <a class="reference internal" href="#noso86" id="id4"><span>[Noso86]</span></a> for subject 1.</p>
 <img alt="../../_images/AugmentedGCM.png" src="../../_images/AugmentedGCM.png" />
 <p class="rubric">References</p>
 <dl class="citation">
-<dt class="label" id="noso86"><span class="brackets">Noso86</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dt class="label" id="noso86"><span class="brackets">Noso86</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>,<a href="#id3">3</a>,<a href="#id4">4</a>)</span></dt>
 <dd><p>Nosofsky, Robert M.: Attention, Similarity, and the Identification-Categorization relationship. In: The Journal of Experimental Psychology: General. 39-57.</p>
 </dd>
 </dl>

@@ -5,7 +5,8 @@ import numpy as np
 
 def distance(w, x, i, P, r):
     """
-    Function that calculates the distance between stimulus and prototype in the psychological space
+    Function that calculates the distance between stimulus and prototype in the psychological space (equation 1 in
+    [MiSm02]_ )
 
     Parameters
     ----------
@@ -39,7 +40,7 @@ def distance(w, x, i, P, r):
 
 def similarity(c, d):
     """
-    Function that calculates the similarity between stimulus i and P
+    Function that calculates the similarity between stimulus i and P (equation 2 in [MiSm02]_ )
 
     Parameters
     ----------
@@ -58,7 +59,7 @@ def similarity(c, d):
 
 def probability_of_category(categories, category, prototypes, w, x, i, r, c):
     """
-    Function that calculates the probability of category response A given stimulus i
+    Function that calculates the probability of category response A given stimulus i (equation 3 in [MiSm02]_)
 
     Parameters
     ----------
