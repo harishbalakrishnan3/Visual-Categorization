@@ -198,7 +198,7 @@ def predicted_i_j(i, current_stimulus, category_membership_list, stimuli, m, c, 
     i : int
         Dimension index
     current_stimulus : list
-        Current stimulus representation. For example, current_stimulus could be [1, 0, 0, 1, 0
+        Current stimulus representation. For example, current_stimulus could be [1, 0, 0, 1, 0]
     category_membership_list : list
         List of lists that contain the category membership details for the stimuli seen so far. For example, if
         stimuli #0, #1, #4 belongs to category #0 and stimuli #2 and #3 belongs to category #1, then
