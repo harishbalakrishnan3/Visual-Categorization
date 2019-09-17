@@ -182,7 +182,7 @@ stimuli with discrete valued dimensions. The documentation for these functions i
 stimuli #0, #1, #4 belongs to category #0 and stimuli #2 and #3 belongs to category #1, then
 category_membership_list = [[0, 1, 4], [2, 3]]</p></li>
 <li><p><strong>stimuli</strong> (<em>list</em>) – List of lists that contain the stimuli seen so far. For example, after training phase of experiment 1 of
-[MeSc78], stimuli = [[1, 1, 1, 1, 1], [1, 0, 1, 0, 1], [0, 1, 0, 1, 1], [0, 0, 0, 0, 0], [0, 1, 0, 0, 0],
+<a class="reference internal" href="#mesc78" id="id4"><span>[MeSc78]</span></a>, stimuli = [[1, 1, 1, 1, 1], [1, 0, 1, 0, 1], [0, 1, 0, 1, 1], [0, 0, 0, 0, 0], [0, 1, 0, 0, 0],
 [1, 0, 1, 1, 0]]</p></li>
 <li><p><strong>m</strong> (<em>list</em>) – List that contains the number of unique values in each dimension. For example, if there are five dimensions and
 all the dimensions are binary, then m = [2, 2, 2, 2, 2]</p></li>
@@ -203,7 +203,7 @@ three objects in category 1 and 4 objects in category 2, then nk = [2, 3, 4]</p>
 <dl class="function">
 <dt id="RMC.rmc.prior_probability_for_new_category">
 <code class="sig-prename descclassname">RMC.rmc.</code><code class="sig-name descname">prior_probability_for_new_category</code><span class="sig-paren">(</span><em class="sig-param">c</em>, <em class="sig-param">nk</em><span class="sig-paren">)</span><a class="headerlink" href="#RMC.rmc.prior_probability_for_new_category" title="Permalink to this definition">¶</a></dt>
-<dd><p>Function that calculates the prior probability for forming a new category. This is equation 3-5 in <a class="reference internal" href="#ande90" id="id4"><span>[Ande90]</span></a></p>
+<dd><p>Function that calculates the prior probability for forming a new category. This is equation 3-5 in <a class="reference internal" href="#ande90" id="id5"><span>[Ande90]</span></a></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -224,7 +224,7 @@ three objects in category 1 and 4 objects in category 2, then nk = [2, 3, 4]</p>
 <dl class="function">
 <dt id="RMC.rmc.prior_probability_of_category_k">
 <code class="sig-prename descclassname">RMC.rmc.</code><code class="sig-name descname">prior_probability_of_category_k</code><span class="sig-paren">(</span><em class="sig-param">k</em>, <em class="sig-param">c</em>, <em class="sig-param">nk</em><span class="sig-paren">)</span><a class="headerlink" href="#RMC.rmc.prior_probability_of_category_k" title="Permalink to this definition">¶</a></dt>
-<dd><p>Function that calculates the prior probability of category k. This is equation 3-4 in <a class="reference internal" href="#ande90" id="id5"><span>[Ande90]</span></a></p>
+<dd><p>Function that calculates the prior probability of category k. This is equation 3-4 in <a class="reference internal" href="#ande90" id="id6"><span>[Ande90]</span></a></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -247,7 +247,7 @@ three objects in category 1 and 4 objects in category 2, then nk = [2, 3, 4]</p>
 <dt id="RMC.rmc.probability_of_F_given_k">
 <code class="sig-prename descclassname">RMC.rmc.</code><code class="sig-name descname">probability_of_F_given_k</code><span class="sig-paren">(</span><em class="sig-param">current_stimulus</em>, <em class="sig-param">k</em>, <em class="sig-param">category_membership_list</em>, <em class="sig-param">stimuli</em>, <em class="sig-param">m</em><span class="sig-paren">)</span><a class="headerlink" href="#RMC.rmc.probability_of_F_given_k" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function that calculates the probability of observing the current feature set of the stimulus given that it comes
-from category k (equation 3-6 in <a class="reference internal" href="#ande90" id="id6"><span>[Ande90]</span></a>)</p>
+from category k (equation 3-6 in <a class="reference internal" href="#ande90" id="id7"><span>[Ande90]</span></a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -257,7 +257,7 @@ from category k (equation 3-6 in <a class="reference internal" href="#ande90" id
 stimuli #0, #1, #4 belongs to category #0 and stimuli #2 and #3 belongs to category #1, then
 category_membership_list = [[0, 1, 4], [2, 3]]</p></li>
 <li><p><strong>stimuli</strong> (<em>list</em>) – List of lists that contain the stimuli seen so far. For example, after training phase of experiment 1 of
-[MeSc78], stimuli = [[1, 1, 1, 1, 1], [1, 0, 1, 0, 1], [0, 1, 0, 1, 1], [0, 0, 0, 0, 0], [0, 1, 0, 0, 0],
+<a class="reference internal" href="#mesc78" id="id8"><span>[MeSc78]</span></a>, stimuli = [[1, 1, 1, 1, 1], [1, 0, 1, 0, 1], [0, 1, 0, 1, 1], [0, 0, 0, 0, 0], [0, 1, 0, 0, 0],
 [1, 0, 1, 1, 0]]</p></li>
 <li><p><strong>m</strong> (<em>list</em>) – List that contains the number of unique values in each dimension. For example, if there are five dimensions and
 all the dimensions are binary, then m = [2, 2, 2, 2, 2]</p></li>
@@ -277,7 +277,7 @@ all the dimensions are binary, then m = [2, 2, 2, 2, 2]</p></li>
 <code class="sig-prename descclassname">RMC.rmc.</code><code class="sig-name descname">probability_of_ij_given_k</code><span class="sig-paren">(</span><em class="sig-param">i</em>, <em class="sig-param">j</em>, <em class="sig-param">k</em>, <em class="sig-param">category_membership_list</em>, <em class="sig-param">stimuli</em>, <em class="sig-param">m</em><span class="sig-paren">)</span><a class="headerlink" href="#RMC.rmc.probability_of_ij_given_k" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function that calculates the mean of the posterior probability density for non-informative priors.
 More specifically, it is the probability that the stimulus displays value j on dimension i given that it comes from
-category k (equation 3-7 in <a class="reference internal" href="#ande90" id="id7"><span>[Ande90]</span></a>)</p>
+category k (equation 3-7 in <a class="reference internal" href="#ande90" id="id9"><span>[Ande90]</span></a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -288,7 +288,7 @@ category k (equation 3-7 in <a class="reference internal" href="#ande90" id="id7
 stimuli #0, #1, #4 belongs to category #0 and stimuli #2 and #3 belongs to category #1, then
 category_membership_list = [[0, 1, 4], [2, 3]]</p></li>
 <li><p><strong>stimuli</strong> (<em>list</em>) – List of lists that contain the stimuli seen so far. For example, after training phase of experiment 1 of
-<a class="reference internal" href="#mesc78" id="id8"><span>[MeSc78]</span></a>, stimuli = [[1, 1, 1, 1, 1], [1, 0, 1, 0, 1], [0, 1, 0, 1, 1], [0, 0, 0, 0, 0], [0, 1, 0, 0, 0],
+<a class="reference internal" href="#mesc78" id="id10"><span>[MeSc78]</span></a>, stimuli = [[1, 1, 1, 1, 1], [1, 0, 1, 0, 1], [0, 1, 0, 1, 1], [0, 0, 0, 0, 0], [0, 1, 0, 0, 0],
 [1, 0, 1, 1, 0]]</p></li>
 <li><p><strong>m</strong> (<em>list</em>) – List that contains the number of unique values in each dimension. For example, if there are five dimensions and
 all the dimensions are binary, then m = [2, 2, 2, 2, 2]</p></li>
@@ -307,13 +307,13 @@ all the dimensions are binary, then m = [2, 2, 2, 2, 2]</p></li>
 <dt id="RMC.rmc.probability_of_k_fiven_F">
 <code class="sig-prename descclassname">RMC.rmc.</code><code class="sig-name descname">probability_of_k_fiven_F</code><span class="sig-paren">(</span><em class="sig-param">current_stimulus</em>, <em class="sig-param">stimuli</em>, <em class="sig-param">k</em>, <em class="sig-param">category_membership_list</em>, <em class="sig-param">m</em>, <em class="sig-param">c</em>, <em class="sig-param">nk</em><span class="sig-paren">)</span><a class="headerlink" href="#RMC.rmc.probability_of_k_fiven_F" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function that calculates the probability that the current stimulus comes from category k given that it has the
-feature set F (equation 3-3 in <a class="reference internal" href="#ande90" id="id9"><span>[Ande90]</span></a>)</p>
+feature set F (equation 3-3 in <a class="reference internal" href="#ande90" id="id11"><span>[Ande90]</span></a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>current_stimulus</strong> (<em>list</em>) – Current stimulus representation. For example, current_stimulus could be [1, 0, 0, 1, 0]</p></li>
 <li><p><strong>stimuli</strong> (<em>list</em>) – List of lists that contain the stimuli seen so far. For example, after training phase of experiment 1 of
-[MeSc78], stimuli = [[1, 1, 1, 1, 1], [1, 0, 1, 0, 1], [0, 1, 0, 1, 1], [0, 0, 0, 0, 0], [0, 1, 0, 0, 0],
+<a class="reference internal" href="#mesc78" id="id12"><span>[MeSc78]</span></a>, stimuli = [[1, 1, 1, 1, 1], [1, 0, 1, 0, 1], [0, 1, 0, 1, 1], [0, 0, 0, 0, 0], [0, 1, 0, 0, 0],
 [1, 0, 1, 1, 0]]</p></li>
 <li><p><strong>k</strong> (<em>int</em>) – Category index. For example, k can be 0 or 1 or 2 etc</p></li>
 <li><p><strong>category_membership_list</strong> (<em>list</em>) – List of lists that contain the category membership details for the stimuli seen so far. For example, if
@@ -339,8 +339,8 @@ three objects in category 1 and 4 objects in category 2, then nk = [2, 3, 4]</p>
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <p>A Sample Script : <a class="reference download internal" download="" href="../../_downloads/cb15bb9d68ad445664039f4145eb6295/sample.py"><code class="xref download docutils literal notranslate"><span class="pre">sample</span></code></a></p>
 <p>The above script illustrates how one can use the rmc module. As an example, the above script generates the category
-structure in fig 3-1 of <a class="reference internal" href="#ande90" id="id10"><span>[Ande90]</span></a>. The dataset of experiment 1 in <a class="reference internal" href="#mesc78" id="id11"><span>[MeSc78]</span></a> is used. Also the script generates one of
-graphs of fig 3-2 of <a class="reference internal" href="#ande90" id="id12"><span>[Ande90]</span></a>.</p>
+structure in fig 3-1 of <a class="reference internal" href="#ande90" id="id13"><span>[Ande90]</span></a>. The dataset of experiment 1 in <a class="reference internal" href="#mesc78" id="id14"><span>[MeSc78]</span></a> is used. Also the script generates one of
+graphs of fig 3-2 of <a class="reference internal" href="#ande90" id="id15"><span>[Ande90]</span></a>.</p>
 <div class="section" id="script-output">
 <h3>Script output<a class="headerlink" href="#script-output" title="Permalink to this headline">¶</a></h3>
 <p><strong>Category 1</strong>: <em>[1, 1, 1, 1, 1] [1, 0, 1, 0, 1] [1, 0, 1, 1, 0]</em></p>
@@ -349,13 +349,13 @@ graphs of fig 3-2 of <a class="reference internal" href="#ande90" id="id12"><spa
 <img alt="../../_images/figure2.png" src="../../_images/figure2.png" />
 <p class="rubric">References</p>
 <dl class="citation">
-<dt class="label" id="ande90"><span class="brackets">Ande90</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id3">2</a>,<a href="#id4">3</a>,<a href="#id5">4</a>,<a href="#id6">5</a>,<a href="#id7">6</a>,<a href="#id9">7</a>,<a href="#id10">8</a>,<a href="#id12">9</a>)</span></dt>
+<dt class="label" id="ande90"><span class="brackets">Ande90</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id3">2</a>,<a href="#id5">3</a>,<a href="#id6">4</a>,<a href="#id7">5</a>,<a href="#id9">6</a>,<a href="#id11">7</a>,<a href="#id13">8</a>,<a href="#id15">9</a>)</span></dt>
 <dd><p>Anderson, John R.: The adaptive character of thought. In: Hillsdale, NJ, US: Lawrence Erlbaum Associates, Inc. (pp. 93-148). 1990</p>
 </dd>
 <dt class="label" id="ande91"><span class="brackets"><a class="fn-backref" href="#id2">Ande91</a></span></dt>
 <dd><p>Anderson, John R.: The Adaptive Nature of Human Categorization. In: Psychological Review. 1991, Vol. 98, No. 3, 409–429</p>
 </dd>
-<dt class="label" id="mesc78"><span class="brackets">MeSc78</span><span class="fn-backref">(<a href="#id8">1</a>,<a href="#id11">2</a>)</span></dt>
+<dt class="label" id="mesc78"><span class="brackets">MeSc78</span><span class="fn-backref">(<a href="#id4">1</a>,<a href="#id8">2</a>,<a href="#id10">3</a>,<a href="#id12">4</a>,<a href="#id14">5</a>)</span></dt>
 <dd><p>Medin, Douglas L.; Schaffer, Marguerite M.: Context Theory of Classification Learning. In: Psychological Review. 1978, Vol. 85, No. 3, 207-238</p>
 </dd>
 </dl>

@@ -111,7 +111,7 @@ def probability_of_F_given_k(current_stimulus, k, category_membership_list, stim
         category_membership_list = [[0, 1, 4], [2, 3]]
     stimuli : list
         List of lists that contain the stimuli seen so far. For example, after training phase of experiment 1 of
-        [MeSc78], stimuli = [[1, 1, 1, 1, 1], [1, 0, 1, 0, 1], [0, 1, 0, 1, 1], [0, 0, 0, 0, 0], [0, 1, 0, 0, 0],
+        [MeSc78]_, stimuli = [[1, 1, 1, 1, 1], [1, 0, 1, 0, 1], [0, 1, 0, 1, 1], [0, 0, 0, 0, 0], [0, 1, 0, 0, 0],
         [1, 0, 1, 1, 0]]
     m : list
         List that contains the number of unique values in each dimension. For example, if there are five dimensions and
@@ -142,7 +142,7 @@ def probability_of_k_fiven_F(current_stimulus, stimuli, k, category_membership_l
         Current stimulus representation. For example, current_stimulus could be [1, 0, 0, 1, 0]
     stimuli : list
         List of lists that contain the stimuli seen so far. For example, after training phase of experiment 1 of
-        [MeSc78], stimuli = [[1, 1, 1, 1, 1], [1, 0, 1, 0, 1], [0, 1, 0, 1, 1], [0, 0, 0, 0, 0], [0, 1, 0, 0, 0],
+        [MeSc78]_, stimuli = [[1, 1, 1, 1, 1], [1, 0, 1, 0, 1], [0, 1, 0, 1, 1], [0, 0, 0, 0, 0], [0, 1, 0, 0, 0],
         [1, 0, 1, 1, 0]]
     k : int
         Category index. For example, k can be 0 or 1 or 2 etc
@@ -205,7 +205,7 @@ def predicted_i_j(i, current_stimulus, category_membership_list, stimuli, m, c, 
         category_membership_list = [[0, 1, 4], [2, 3]]
     stimuli : list
         List of lists that contain the stimuli seen so far. For example, after training phase of experiment 1 of
-        [MeSc78], stimuli = [[1, 1, 1, 1, 1], [1, 0, 1, 0, 1], [0, 1, 0, 1, 1], [0, 0, 0, 0, 0], [0, 1, 0, 0, 0],
+        [MeSc78]_, stimuli = [[1, 1, 1, 1, 1], [1, 0, 1, 0, 1], [0, 1, 0, 1, 1], [0, 0, 0, 0, 0], [0, 1, 0, 0, 0],
         [1, 0, 1, 1, 0]]
     m : list
         List that contains the number of unique values in each dimension. For example, if there are five dimensions and
