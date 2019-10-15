@@ -2,10 +2,10 @@ Visual Categorization
 =====================
 
 
-The goal of this project is to create a single repository containing python implementations of various visual
+The goal of this project is to create a single repository that contains python implementations of various visual
 categorization models along with publicly available datasets.
 The corresponding github repo is: https://github.com/harishbalakrishnan3/Visual-Categorization.
-This is an ongoing project. If you find any errors or if you wish to contribute new models/datasets to this repo,
+This is an ongoing project. If you have any suggestions or if you wish to contribute new models/datasets to this repo,
 feel free to contact me at: harishbalakrishnan3@gmail.com
 
 
